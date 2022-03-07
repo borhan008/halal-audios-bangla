@@ -74,7 +74,7 @@ const newAudioCategoryFull = (catId) => {
                     <div class="border-b border-gray-50 w-full flex p-2 hover:bg-red-200 cursor-pointer items-center single-audio"
                 data-id=${singleAudio.id - 1}>
                 <img src="${singleAudio.imgUrl ? singleAudio.imgUrl : `def.png`}" alt="" class="rounded">
-                <h2 class="text-xl ml-5">${singleAudio.title}</h2>
+                <h2 class="text-xl ml-5">${singleAudio.id}. ${singleAudio.title}</h2>
             </div>`;
 
                     document.getElementById('audio-lists').appendChild(createNewAudioDiv);
@@ -89,7 +89,7 @@ const newAudioCategoryFull = (catId) => {
                     audio.play();
                     playBtn.innerText = "Pause";
                 }
-                document.getElementById('audio-name').innerText = data[audioData].title;
+                document.getElementById('audio-name').innerText = `${data[audioData].id}.${data[audioData].title}`;
                 document.getElementById('audio-image').src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
                 document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
                 const removeClass = document.querySelectorAll(`.single-audio`);
