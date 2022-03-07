@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <script src="https:cdn.tailwindcss.com"></script>
-    <script src="tailwind.js"></script>
+    <script src="https://kit.fontawesome.com/7ceb067bec.js" crossorigin="anonymous"></script>
+
     <style>
         #audio-image {
             width: 50px;
@@ -17,7 +18,9 @@
 </head>
 
 <body>
+
     <div id="audio-categories" class="flex flex-wrap justify-center content-center mx-auto max-w-xs min-h-screen gap-4">
+
         <h2 class="text-red-300 w-full text-center text-2xl font-bold">AUDIOS</h2>
 
     </div>
@@ -27,27 +30,41 @@
         <div class="w-full sticky top-0 bg-white border border-red-50">
 
             <div class="flex justify-between items-center shadow-lg py-1 px-5 border-t border-red-50">
-                <div class="text-xs w-6 cursor-pointer" id="back-categories">
-                    &lt;--
+                <div class="text-xs w-6 cursor-pointer text-red-300 text-xl" id="back-categories">
+                    <i class="fas fa-long-arrow-alt-left"></i>
                 </div>
-                <div class="flex items-center max-w-xs w-auto md:w-80	 self-start	">
+                <div class="audio-controlls w-auto w-40">
+                    <div class="flex justify-center">
+                        <div id="previous-btn"
+                            class="cursor-pointer w-8 h-8 bg-red-200 text-white text-xl text-center rounded-full flex items-center justify-center">
+                            <i class="fa fa-solid fa-caret-left"></i>
+                        </div>
+                        <div id="play-btn"
+                            class="mx-3 cursor-pointer w-8 h-8 bg-red-200 text-white text-xl text-center rounded-full flex items-center justify-center">
+                            <i class="fa fa-solid fa-play"></i>
+                        </div>
+                        <div id="next-btn"
+                            class="cursor-pointer w-8 h-8 bg-red-200 text-white text-xl text-center rounded-full flex items-center justify-center">
+                            <i class="fa fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center max-w-xs w-auto md:w-80	 justify-center">
                     <img class="rounded-full" src="https://via.placeholder.com/50/" id="audio-image" alt="">
                     <h2 id="audio-name" class="hidden md:block text-xl ml-2 truncate">None</h2>
                 </div>
-                <div class="audio-controlls flex-1 max-w-xs w-auto md:w-80	">
-                    <div class="flex justify-around">
-                        <div id="previous-btn" class="cursor-pointer">Prev</div>
-                        <div id="play-btn" class="mx-3 cursor-pointer">Play</div>
-                        <div id="next-btn" class="cursor-pointer">Next</div>
-                    </div>
-                </div>
-                <div class="h-3 w-1/6 flex items-center">
-                    <span>Vol:</span>
+
+                <div class="h-3 w-1/6 flex items-center mr-4">
+                    <span><i class="fas fa-volume-down mr-1 text-xl text-red-200"></i></span>
                     <div id="audio-volume" onclick="changeVolume(event)" class="bg-red-100 h-3 w-full">
                         <div class="bg-red-200 h-3" style="width:10%;"></div>
                     </div>
                 </div>
-                <a href="#" id="download-link" target="__blank">Download</a>
+                <a href="#" id="download-link"
+                    class=" w-8 h-8 bg-red-200 text-white text-xl text-center rounded-sm flex items-center justify-center"
+                    target="__blank">
+                    <i class="fas fa-arrow-down"></i>
+                </a>
 
             </div>
             <div class="w-full h-1 cursor-pointer bg-red-50">

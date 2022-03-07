@@ -87,7 +87,7 @@ const newAudioCategoryFull = (catId) => {
                 currentAudio = parseInt(audioData);
                 if (autoPlay == true) {
                     audio.play();
-                    playBtn.innerText = "Pause";
+                    playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
                 }
                 document.getElementById('audio-name').innerText = `${data[audioData].id}.${data[audioData].title}`;
                 document.getElementById('audio-image').src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
@@ -103,11 +103,11 @@ const newAudioCategoryFull = (catId) => {
             const playMusic = () => {
                 if (audio.duration > 0 && !audio.paused) {
                     audio.pause();
-                    playBtn.innerText = "Play";
+                    playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
                 } else {
 
                     audio.play();
-                    playBtn.innerText = "Pause";
+                    playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
                 }
             }
 
