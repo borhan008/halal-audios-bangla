@@ -1,0 +1,686 @@
+[
+    {
+        "id": "1",
+        "title": "Al Fatiha",
+        "url": "https://www.truemuslims.net/Quran/Bangla/001.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "2",
+        "title": "Al Baqarah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/002.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "3",
+        "title": "Al Imran",
+        "url": "https://www.truemuslims.net/Quran/Bangla/003.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "4",
+        "title": "An Nisa",
+        "url": "https://www.truemuslims.net/Quran/Bangla/004.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "5",
+        "title": "Al Maidah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/005.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "6",
+        "title": "Al Anam",
+        "url": "https://www.truemuslims.net/Quran/Bangla/006.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "7",
+        "title": "Al Araf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/007.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "8",
+        "title": "Al Anfal",
+        "url": "https://www.truemuslims.net/Quran/Bangla/008.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "9",
+        "title": "At Taubah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/009.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "10",
+        "title": "Yunus",
+        "url": "https://www.truemuslims.net/Quran/Bangla/010.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "11",
+        "title": "Hud",
+        "url": "https://www.truemuslims.net/Quran/Bangla/011.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "12",
+        "title": "Yusuf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/012.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "13",
+        "title": "Ar Rad",
+        "url": "https://www.truemuslims.net/Quran/Bangla/013.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "14",
+        "title": "Ibrahim",
+        "url": "https://www.truemuslims.net/Quran/Bangla/014.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "15",
+        "title": "Al Hijr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/015.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "16",
+        "title": "An Nahl",
+        "url": "https://www.truemuslims.net/Quran/Bangla/016.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "17",
+        "title": "Al Isra",
+        "url": "https://www.truemuslims.net/Quran/Bangla/017.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "18",
+        "title": "Al Kahf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/018.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "19",
+        "title": "Maryam",
+        "url": "https://www.truemuslims.net/Quran/Bangla/019.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "20",
+        "title": "Ta-Ha",
+        "url": "https://www.truemuslims.net/Quran/Bangla/.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "21",
+        "title": "Al Anbiya",
+        "url": "https://www.truemuslims.net/Quran/Bangla/021.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "22",
+        "title": "Al Hajj",
+        "url": "https://www.truemuslims.net/Quran/Bangla/022.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "23",
+        "title": "Al Muminun",
+        "url": "https://www.truemuslims.net/Quran/Bangla/023.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "24",
+        "title": "An Nur",
+        "url": "https://www.truemuslims.net/Quran/Bangla/024.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "25",
+        "title": "Al Furqan",
+        "url": "https://www.truemuslims.net/Quran/Bangla/025.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "26",
+        "title": "Ash Shuara",
+        "url": "https://www.truemuslims.net/Quran/Bangla/026.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "27",
+        "title": "An Naml",
+        "url": "https://www.truemuslims.net/Quran/Bangla/027.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "28",
+        "title": "Al Qasas",
+        "url": "https://www.truemuslims.net/Quran/Bangla/028.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "29",
+        "title": "Al Ankabut",
+        "url": "https://www.truemuslims.net/Quran/Bangla/029.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "30",
+        "title": "Ar Rum",
+        "url": "https://www.truemuslims.net/Quran/Bangla/030.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "31",
+        "title": "Luqman",
+        "url": "https://www.truemuslims.net/Quran/Bangla/031.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "32",
+        "title": "As Sajdah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/032.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "33",
+        "title": "Al Ahzab",
+        "url": "https://www.truemuslims.net/Quran/Bangla/033.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "34",
+        "title": "Saba",
+        "url": "https://www.truemuslims.net/Quran/Bangla/034.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "35",
+        "title": "Fatir",
+        "url": "https://www.truemuslims.net/Quran/Bangla/035.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "36",
+        "title": "Ya Sin",
+        "url": "https://www.truemuslims.net/Quran/Bangla/036.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "37",
+        "title": "As-Saffat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/037.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "38",
+        "title": "Sad",
+        "url": "https://www.truemuslims.net/Quran/Bangla/038.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "39",
+        "title": "Az-Zaumar",
+        "url": "https://www.truemuslims.net/Quran/Bangla/039.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "40",
+        "title": "Ghafir",
+        "url": "https://www.truemuslims.net/Quran/Bangla/040.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "41",
+        "title": "Fussilat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/041.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "42",
+        "title": "Ash-Shura",
+        "url": "https://www.truemuslims.net/Quran/Bangla/042.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "43",
+        "title": "Az-Zukhruf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/043.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "44",
+        "title": "Ad-Dukhan",
+        "url": "https://www.truemuslims.net/Quran/Bangla/044.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "45",
+        "title": "Al-Jathiyah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/045.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "46",
+        "title": "Al-Ahqaf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/046.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "47",
+        "title": "Muhammad",
+        "url": "https://www.truemuslims.net/Quran/Bangla/047.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "48",
+        "title": "Al-Fath",
+        "url": "https://www.truemuslims.net/Quran/Bangla/048.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "49",
+        "title": "Al-Hujurat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/049.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "50",
+        "title": "Qaf",
+        "url": "https://www.truemuslims.net/Quran/Bangla/050.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "51",
+        "title": "Adh-Dhariyat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/051.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "52",
+        "title": "At-Tur",
+        "url": "https://www.truemuslims.net/Quran/Bangla/052.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "53",
+        "title": "An-Najm",
+        "url": "https://www.truemuslims.net/Quran/Bangla/053.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "54",
+        "title": "Al-Qamar",
+        "url": "https://www.truemuslims.net/Quran/Bangla/054.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "55",
+        "title": "Ar-Rahman",
+        "url": "https://www.truemuslims.net/Quran/Bangla/055.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "56",
+        "title": "Al-Waqiah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/056.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "57",
+        "title": "Al-Hadid",
+        "url": "https://www.truemuslims.net/Quran/Bangla/057.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "58",
+        "title": "Al-Mujadilah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/058.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "59",
+        "title": "Al-Hashr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/059.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "60",
+        "title": "Al-Mumtahanah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/060.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "61",
+        "title": "As-Saff",
+        "url": "https://www.truemuslims.net/Quran/Bangla/061.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "62",
+        "title": "Al-Jumah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/062.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "63",
+        "title": "Al-Munafiqun",
+        "url": "https://www.truemuslims.net/Quran/Bangla/063.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "64",
+        "title": "At-Taghabun",
+        "url": "https://www.truemuslims.net/Quran/Bangla/064.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "65",
+        "title": "At-Talaq",
+        "url": "https://www.truemuslims.net/Quran/Bangla/065.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "66",
+        "title": "At-Tahrim",
+        "url": "https://www.truemuslims.net/Quran/Bangla/066.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "67",
+        "title": "Al-Mulk",
+        "url": "https://www.truemuslims.net/Quran/Bangla/067.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "68",
+        "title": "Al-Qalam",
+        "url": "https://www.truemuslims.net/Quran/Bangla/068.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "69",
+        "title": "Al-Haqqah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/069.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "70",
+        "title": "Al-Maarij",
+        "url": "https://www.truemuslims.net/Quran/Bangla/070.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "71",
+        "title": "Nuh",
+        "url": "https://www.truemuslims.net/Quran/Bangla/071.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "72",
+        "title": "Al-Jinn",
+        "url": "https://www.truemuslims.net/Quran/Bangla/072.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "73",
+        "title": "Al-Muzammil",
+        "url": "https://www.truemuslims.net/Quran/Bangla/073.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "74",
+        "title": "Al-Muddaththir",
+        "url": "https://www.truemuslims.net/Quran/Bangla/074.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "75",
+        "title": "Al-Qiyamah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/075.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "76",
+        "title": "Al-Inasan",
+        "url": "https://www.truemuslims.net/Quran/Bangla/076.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "77",
+        "title": "Al-Mursalat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/077.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "78",
+        "title": "An-Naba",
+        "url": "https://www.truemuslims.net/Quran/Bangla/078.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "79 ",
+        "title": "An-Naziat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/079.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "80",
+        "title": "Abasa",
+        "url": "https://www.truemuslims.net/Quran/Bangla/080.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "81",
+        "title": "At-Takwir",
+        "url": "https://www.truemuslims.net/Quran/Bangla/081.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "82",
+        "title": "Al-Infitar",
+        "url": "https://www.truemuslims.net/Quran/Bangla/082.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "83",
+        "title": "Al-Mutaffofin",
+        "url": "https://www.truemuslims.net/Quran/Bangla/083.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "84",
+        "title": "Al-Inshiqaq",
+        "url": "https://www.truemuslims.net/Quran/Bangla/084.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "85",
+        "title": "Al-Buruj",
+        "url": "https://www.truemuslims.net/Quran/Bangla/085.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "86",
+        "title": "At-Tariq",
+        "url": "https://www.truemuslims.net/Quran/Bangla/086.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "87",
+        "title": "Al-Ala",
+        "url": "https://www.truemuslims.net/Quran/Bangla/087.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "88",
+        "title": "Al-Ghashiyah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/088.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "89",
+        "title": "Al-Fajr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/089.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "90",
+        "title": "Al-Balad",
+        "url": "https://www.truemuslims.net/Quran/Bangla/090.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "91",
+        "title": "Ash-Shams",
+        "url": "https://www.truemuslims.net/Quran/Bangla/091.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "92",
+        "title": "Al-Lail",
+        "url": "https://www.truemuslims.net/Quran/Bangla/092.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "93",
+        "title": "Ad-Duha",
+        "url": "https://www.truemuslims.net/Quran/Bangla/093.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "94",
+        "title": "Ash-Sharh",
+        "url": "https://www.truemuslims.net/Quran/Bangla/094.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "95",
+        "title": "At-Tin",
+        "url": "https://www.truemuslims.net/Quran/Bangla/095.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "96",
+        "title": "Al-Alaq",
+        "url": "https://www.truemuslims.net/Quran/Bangla/096.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "97",
+        "title": "Al-Qadr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/097.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "98",
+        "title": "Al-Baiyyinah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/098.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "99",
+        "title": "Az-zalzalah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/099.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "100",
+        "title": "Al-Adiyat",
+        "url": "https://www.truemuslims.net/Quran/Bangla/100.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "101",
+        "title": "Al-Qariah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/101.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "102",
+        "title": "At-Takathur",
+        "url": "https://www.truemuslims.net/Quran/Bangla/102.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "103",
+        "title": "Al-Asr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/103.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "104",
+        "title": "Al-Humazah",
+        "url": "https://www.truemuslims.net/Quran/Bangla/104.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "105",
+        "title": "Al-Fil",
+        "url": "https://www.truemuslims.net/Quran/Bangla/105.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "106",
+        "title": "Quraish",
+        "url": "https://www.truemuslims.net/Quran/Bangla/106.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "107",
+        "title": "Al-Maun",
+        "url": "https://www.truemuslims.net/Quran/Bangla/107.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "108",
+        "title": "Al-Kauthar",
+        "url": "https://www.truemuslims.net/Quran/Bangla/108.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "109",
+        "title": "Al-Kafirun",
+        "url": "https://www.truemuslims.net/Quran/Bangla/109.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "110",
+        "title": "An-Nasr",
+        "url": "https://www.truemuslims.net/Quran/Bangla/110.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "111",
+        "title": "Al-Masad",
+        "url": "https://www.truemuslims.net/Quran/Bangla/111.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "112",
+        "title": "Al-Ikhlas",
+        "url": "https://www.truemuslims.net/Quran/Bangla/112.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "113",
+        "title": "Al-Falaq",
+        "url": "https://www.truemuslims.net/Quran/Bangla/113.mp3",
+        "imgUrl": ""
+    },
+    {
+        "id": "114",
+        "title": "An-Nas",
+        "url": "https://www.truemuslims.net/Quran/Bangla/114.mp3",
+        "imgUrl": ""
+    }
+]

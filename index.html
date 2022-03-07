@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https:cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+    <style>
+        #audio-image {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="audio-categories" class="flex flex-wrap justify-center content-center mx-auto max-w-xs min-h-screen gap-4">
+        <h2 class="text-red-300 w-full text-center text-2xl font-bold">AUDIOS</h2>
+
+    </div>
+    <audio src="" id="audio" class="hidden"></audio>
+    <div id="all-audio">
+
+        <div class="w-full sticky top-0 bg-white border border-red-50">
+
+            <div class="flex justify-between items-center shadow-lg py-1 px-5 border-t border-red-50">
+                <div class="text-xs w-6 cursor-pointer" id="back-categories">
+                    &lt;--
+                </div>
+                <div class="flex items-center max-w-xs w-auto md:w-80	 self-start	">
+                    <img class="rounded-full" src="https://via.placeholder.com/50/" id="audio-image" alt="">
+                    <h2 id="audio-name" class="hidden md:block text-xl ml-2 truncate">None</h2>
+                </div>
+                <div class="audio-controlls flex-1 max-w-xs w-auto md:w-80	">
+                    <div class="flex justify-around">
+                        <div id="previous-btn" class="cursor-pointer">Prev</div>
+                        <div id="play-btn" class="mx-3 cursor-pointer">Play</div>
+                        <div id="next-btn" class="cursor-pointer">Next</div>
+                    </div>
+                </div>
+                <div class="h-3 w-1/6 flex items-center">
+                    <span>Vol:</span>
+                    <div id="audio-volume" onclick="changeVolume(event)" class="bg-red-100 h-3 w-full">
+                        <div class="bg-red-200 h-3" style="width:10%;"></div>
+                    </div>
+                </div>
+                <a href="#" id="download-link" target="__blank">Download</a>
+
+            </div>
+            <div class="w-full h-1 cursor-pointer bg-red-50">
+                <div class="bg-red-200 h-1" id="audio-progress"></div>
+            </div>
+        </div>
+        <div id="audio-lists" class="mt-2">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
