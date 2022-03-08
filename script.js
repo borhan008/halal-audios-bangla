@@ -174,10 +174,32 @@ const newAudioCategoryFull = (catId) => {
             }
 
             playBtn.addEventListener('click', function () { playMusic(); });
+            document.addEventListener('keydown', (e) => {
+                console.log(e);
+                if (e.charCode === 32 || e.code === "Space") {
+                    e.preventDefault();
+                    playMusic();
+                }
+                else if (e.keyCode === 38 || e.code === "ArrowUp") {
+                    audio.volume >= 1 ? audio.volume = 1 : audio.volume += 0.1;
+                    document.querySelector(`#${audioVolume.getAttribute('id')} div`).style.width = `${audio.volume * 100}%`;
+                }
+                else if (e.keyCode === 40 || e.code === "ArrowDown") {
+                    audio.volume <= 0 ? audio.volume = 0 : audio.volume -= 0.1;
+                    document.querySelector(`#${audioVolume.getAttribute('id')} div`).style.width = `${audio.volume * 100}%`;
+                }
+                else if (e.keyCode === "39" || e.code === "ArrowRight") {
+                    audio.currentTime >= audio.duration ? '' : audio.currentTime += 10;
+                }
+                else if (e.keyCode === "37" || e.code === "ArrowLeft") {
+                    audio.currentTime <= 9 ? '' : audio.currentTime -= 10;
+                }
+            });
             audio.addEventListener('timeupdate', changeTime);
             aduioProgress.parentNode.addEventListener('click', updateAudioProgress);
             nextBtn.addEventListener('click', function () { nextPrevAudio(currentAudio + 1) });
             prevBtn.addEventListener('click', function () { nextPrevAudio(currentAudio - 1) });
+
             audioMuter.addEventListener('click', () => audioMuteUnmute());
             audioLoop.addEventListener('click', () => audioLoopUnloop());
             audioList.addEventListener('click', function (e) {
