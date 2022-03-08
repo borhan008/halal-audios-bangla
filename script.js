@@ -8,6 +8,11 @@ const prevBtn = document.getElementById('previous-btn');
 const audioVolume = document.getElementById('audio-volume');
 const aduioProgress = document.getElementById('audio-progress');
 const audioList = document.getElementById('audio-lists');
+const audioImage = document.getElementById('audio-image');
+const audioMuter = document.getElementById('audio-muter');
+const audioLoop = document.getElementById('audio-loop');
+const audioLoopSpan = document.getElementById('audio-loop-span');
+
 audio.volume = 0.1;
 
 
@@ -85,28 +90,37 @@ const newAudioCategoryFull = (catId) => {
                 audio.currentTime = 0;
                 audio.src = data[audioData].url;
                 currentAudio = parseInt(audioData);
-                if (autoPlay == true) {
-                    audio.play();
-                    playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
-                }
-                document.getElementById('audio-name').innerText = `${data[audioData].id}.${data[audioData].title}`;
-                document.getElementById('audio-image').src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
-                document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
+                document.getElementById('audio-name').innerText = `Loading....`;
                 const removeClass = document.querySelectorAll(`.single-audio`);
                 removeClass.forEach(clName => {
                     clName.classList.remove('bg-red-200');
                 })
                 document.querySelector(`[data-id="${data[audioData].id - 1}"]`).classList.add('bg-red-200');
+                audioImage.src = "https://d-great.org/wp-content/themes/apparatus/images/newsletter_loader.gif";
+                audio.addEventListener('loadedmetadata', () => {
+                    document.title = data[audioData].title;
+                    if (autoPlay == true) {
+                        audio.play();
+                        playBtn.classList.add('bg-red-400');
+                        playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
+                    }
+                    document.getElementById('audio-name').innerText = `${data[audioData].id}.${data[audioData].title}`;
+                    audioImage.src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
+                    document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
+                });
+
             }
 
 
             const playMusic = () => {
                 if (audio.duration > 0 && !audio.paused) {
                     audio.pause();
+                    playBtn.classList.remove('bg-red-400');
                     playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
                 } else {
 
                     audio.play();
+                    playBtn.classList.add('bg-red-400');
                     playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
                 }
             }
@@ -137,12 +151,35 @@ const newAudioCategoryFull = (catId) => {
                 }
             }
 
+            const audioMuteUnmute = () => {
+                if (audio.muted) {
+                    audio.muted = false;
+                    audioMuter.innerHTML = `<i class="fas fa-volume-down text-xl"></i>`;
+                } else {
+                    audio.muted = true;
+                    audioMuter.innerHTML = `<i class="fas fa-volume-mute text-red-400"></i>`;
+                }
+            }
+
+            const audioLoopUnloop = () => {
+                if (audio.loop) {
+                    audio.loop = false;
+                    audioLoop.classList.remove('text-red-400');
+                    audioLoopSpan.innerText = `x`;
+                } else {
+                    audio.loop = true;
+                    audioLoop.classList.add('text-red-400');
+                    audioLoopSpan.innerText = `1`;
+                }
+            }
 
             playBtn.addEventListener('click', function () { playMusic(); });
             audio.addEventListener('timeupdate', changeTime);
             aduioProgress.parentNode.addEventListener('click', updateAudioProgress);
             nextBtn.addEventListener('click', function () { nextPrevAudio(currentAudio + 1) });
             prevBtn.addEventListener('click', function () { nextPrevAudio(currentAudio - 1) });
+            audioMuter.addEventListener('click', () => audioMuteUnmute());
+            audioLoop.addEventListener('click', () => audioLoopUnloop());
             audioList.addEventListener('click', function (e) {
                 if (e.target.classList.contains('single-audio')) {
                     audioDetailsUpadate(e.target.getAttribute('data-id'), true);
