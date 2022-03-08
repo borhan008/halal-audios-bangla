@@ -113,7 +113,7 @@ const newAudioCategoryFull = (catId) => {
 
 
             const playMusic = () => {
-                if (audio.duration > 0 && !audio.paused) {
+                if (!audio.paused) {
                     audio.pause();
                     playBtn.classList.remove('bg-red-400');
                     playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
@@ -175,7 +175,6 @@ const newAudioCategoryFull = (catId) => {
 
             playBtn.addEventListener('click', function () { playMusic(); });
             document.addEventListener('keydown', (e) => {
-                console.log(e);
                 if (e.charCode === 32 || e.code === "Space") {
                     e.preventDefault();
                     playMusic();
@@ -189,10 +188,14 @@ const newAudioCategoryFull = (catId) => {
                     document.querySelector(`#${audioVolume.getAttribute('id')} div`).style.width = `${audio.volume * 100}%`;
                 }
                 else if (e.keyCode === "39" || e.code === "ArrowRight") {
-                    audio.currentTime >= audio.duration ? '' : audio.currentTime += 10;
+                    if (audio.duration > 0) {
+                        audio.currentTime >= audio.duration ? '' : audio.currentTime += 10;
+                    }
                 }
                 else if (e.keyCode === "37" || e.code === "ArrowLeft") {
-                    audio.currentTime <= 9 ? '' : audio.currentTime -= 10;
+                    if (audio.duration > 0) {
+                        audio.currentTime <= 9 ? audio.currentTime = 0 : audio.currentTime -= 10;
+                    }
                 }
             });
             audio.addEventListener('timeupdate', changeTime);
