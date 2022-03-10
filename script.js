@@ -143,11 +143,22 @@ const newAudioCategoryFull = (catId) => {
                     audio.pause();
                     playBtn.classList.remove('bg-red-400');
                     playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
+
                 } else {
 
-                    audio.play();
-                    playBtn.classList.add('bg-red-400');
-                    playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
+                    const playAudio = audio.play();
+                    if (playAudio !== undefined) {
+                        playAudio.then(_ => {
+                            playBtn.classList.add('bg-red-400');
+                            playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
+                        }).catch(error => {
+                            audio.pause();
+                            playBtn.classList.remove('bg-red-400');
+                            playBtn.innerHTML = `<i class="fa fa-solid fa-play"></i>`;
+                            document.getElementById('audio-name').innerHTML = "<strong>Wait to load the audio, please.</strong>";
+                        });
+
+                    }
                 }
             }
 
