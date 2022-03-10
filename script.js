@@ -49,12 +49,12 @@ const audioTimeConverter = (totalTimeInSeconds) => {
     if (minutes < 10) { minutes = "0" + minutes; }
     if (seconds < 10) { seconds = "0" + seconds; }
 
-
-    if (audio.duration < 3600 || parseInt(hours) === 0) {
+    if (audio.duration < 3600) {
         return minutes + ':' + seconds;
     } else {
         return hours + ':' + minutes + ':' + seconds;
     }
+
 }
 
 audioCategoryLists.addEventListener('click', function (event) {
@@ -131,7 +131,7 @@ const newAudioCategoryFull = (catId) => {
                         playBtn.classList.add('bg-red-400');
                         playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
                     }
-                    document.getElementById('audio-name').innerText = `${data[audioData].id}.${data[audioData].title}`;
+                    document.getElementById('audio-name').innerText = `${data[audioData].id}.${(data[audioData].title).slice(0, 10)}...`;
                     audioImage.src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
                     document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
                 });
