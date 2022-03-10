@@ -48,11 +48,10 @@ const audioTimeConverter = (totalTimeInSeconds) => {
     if (hours < 10) { hours = "0" + hours; }
     if (minutes < 10) { minutes = "0" + minutes; }
     if (seconds < 10) { seconds = "0" + seconds; }
-
-    if (audio.duration < 3600) {
-        return minutes + ':' + seconds;
-    } else {
+    if (audio.duration > 3600) {
         return hours + ':' + minutes + ':' + seconds;
+    } else {
+        return minutes + ':' + seconds;
     }
 
 }
@@ -125,7 +124,7 @@ const newAudioCategoryFull = (catId) => {
                 audioImage.src = "https://d-great.org/wp-content/themes/apparatus/images/newsletter_loader.gif";
                 audio.addEventListener('loadedmetadata', () => {
                     document.title = data[audioData].title;
-                    audioTiming.innerHTML = audioTimeConverter(audio.duration);
+                    audioTiming.innerHTML = audioTimeConverter(audio.duration ? audio.duration : 0);
                     if (autoPlay === true) {
                         audio.play();
                         playBtn.classList.add('bg-red-400');
@@ -155,7 +154,8 @@ const newAudioCategoryFull = (catId) => {
             const changeTime = (e) => {
                 const audioTimePercentage = e.srcElement.currentTime / e.srcElement.duration * 100;
                 aduioProgress.style.width = `${audioTimePercentage}%`;
-                audioCurrentTime.innerHTML = audioTimeConverter(audio.currentTime);
+                audioCurrentTime.innerHTML = audioTimeConverter(audio.currentTime ? audio.currentTime : 0);
+
             }
 
             const updateAudioProgress = (e) => {
@@ -208,7 +208,7 @@ const newAudioCategoryFull = (catId) => {
                     playMusic();
                 }
                 else if (e.keyCode === 38 || e.code === "ArrowUp") {
-                    audio.volume >= 1 ? audio.volume = 1 : audio.volume += 0.1;
+                    audio.volume >= 0.9 ? audio.volume = 1 : audio.volume += 0.1;
                     document.querySelector(`#${audioVolume.getAttribute('id')} div`).style.width = `${audio.volume * 100}%`;
                 }
                 else if (e.keyCode === 40 || e.code === "ArrowDown") {
