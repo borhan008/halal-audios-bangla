@@ -12,6 +12,8 @@ const audioImage = document.getElementById('audio-image');
 const audioMuter = document.getElementById('audio-muter');
 const audioLoop = document.getElementById('audio-loop');
 const audioLoopSpan = document.getElementById('audio-loop-span');
+const audioTiming = document.getElementById('audio-timing');
+const audioCurrentTime = document.getElementById('audio-currenttime');
 
 audio.volume = 0.1;
 
@@ -21,6 +23,9 @@ allAudioContainer.style.display = "none";
 fetch('audio-lists.json')
     .then(res => res.json())
     .then(categoryLists => showCategory(categoryLists));
+
+
+
 
 const showCategory = (categoryListsData) => {
     categoryListsData.map(singleCategory => {
@@ -33,6 +38,25 @@ const showCategory = (categoryListsData) => {
 
     });
 }
+
+
+const audioTimeConverter = (totalTimeInSeconds) => {
+    const sec = parseInt(totalTimeInSeconds, 10);
+    let hours = Math.floor(sec / 3600);
+    let minutes = Math.floor((sec - (hours * 3600)) / 60);
+    let seconds = sec - (hours * 3600) - (minutes * 60);
+    if (hours < 10) { hours = "0" + hours; }
+    if (minutes < 10) { minutes = "0" + minutes; }
+    if (seconds < 10) { seconds = "0" + seconds; }
+
+
+    if (audio.duration < 3600 || parseInt(hours) === 0) {
+        return minutes + ':' + seconds;
+    } else {
+        return hours + ':' + minutes + ':' + seconds;
+    }
+}
+
 audioCategoryLists.addEventListener('click', function (event) {
     if (event.target.classList.contains('audio-category')) {
         newAudioCategoryFull(event.target.getAttribute('data-category'));
@@ -88,6 +112,8 @@ const newAudioCategoryFull = (catId) => {
             showingAllAudio();
             const audioDetailsUpadate = (audioData, autoPlay) => {
                 audio.currentTime = 0;
+                audioTiming.innerHTML = "00:00";
+                audioCurrentTime.innerHTML = "00:00";
                 audio.src = data[audioData].url;
                 currentAudio = parseInt(audioData);
                 document.getElementById('audio-name').innerText = `Loading....`;
@@ -99,7 +125,8 @@ const newAudioCategoryFull = (catId) => {
                 audioImage.src = "https://d-great.org/wp-content/themes/apparatus/images/newsletter_loader.gif";
                 audio.addEventListener('loadedmetadata', () => {
                     document.title = data[audioData].title;
-                    if (autoPlay == true) {
+                    audioTiming.innerHTML = audioTimeConverter(audio.duration);
+                    if (autoPlay === true) {
                         audio.play();
                         playBtn.classList.add('bg-red-400');
                         playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
@@ -128,6 +155,7 @@ const newAudioCategoryFull = (catId) => {
             const changeTime = (e) => {
                 const audioTimePercentage = e.srcElement.currentTime / e.srcElement.duration * 100;
                 aduioProgress.style.width = `${audioTimePercentage}%`;
+                audioCurrentTime.innerHTML = audioTimeConverter(audio.currentTime);
             }
 
             const updateAudioProgress = (e) => {
@@ -198,8 +226,19 @@ const newAudioCategoryFull = (catId) => {
                     }
                 }
             });
+
+            const showProgressHoverTime = (e) => {
+                if (audio.duration > 0) {
+                    const audioUpdateTime = (e.offsetX / aduioProgress.parentNode.clientWidth) * audio.duration;
+                    aduioProgress.parentNode.setAttribute('title', audioTimeConverter(audioUpdateTime));
+
+                }
+            }
+
             audio.addEventListener('timeupdate', changeTime);
+            aduioProgress.parentNode.addEventListener('mousemove', showProgressHoverTime);
             aduioProgress.parentNode.addEventListener('click', updateAudioProgress);
+
             nextBtn.addEventListener('click', function () { nextPrevAudio(currentAudio + 1) });
             prevBtn.addEventListener('click', function () { nextPrevAudio(currentAudio - 1) });
 
