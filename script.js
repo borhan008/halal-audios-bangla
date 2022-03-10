@@ -131,7 +131,7 @@ const newAudioCategoryFull = (catId) => {
                         playBtn.classList.add('bg-red-400');
                         playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
                     }
-                    document.getElementById('audio-name').innerText = `${data[audioData].id}.${(data[audioData].title).slice(0, 10)}...`;
+                    document.getElementById('audio-name').innerHTML = `${data[audioData].id}.<span class="inline-block md:hidden">${(data[audioData].title).slice(0, 10)}...</span><span class="hidden md:inline-block">${(data[audioData].title).slice(0, 50)}</span>`;
                     audioImage.src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
                     document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
                 });
