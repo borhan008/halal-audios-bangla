@@ -14,6 +14,8 @@ const audioLoop = document.getElementById('audio-loop');
 const audioLoopSpan = document.getElementById('audio-loop-span');
 const audioTiming = document.getElementById('audio-timing');
 const audioCurrentTime = document.getElementById('audio-currenttime');
+const audioDownloadLink = document.getElementById('download-link');
+
 
 audio.volume = 0.1;
 
@@ -115,6 +117,7 @@ const newAudioCategoryFull = (catId) => {
                 audioCurrentTime.innerHTML = "00:00";
                 audio.src = data[audioData].url;
                 currentAudio = parseInt(audioData);
+                audioDownloadLink.classList.add('pointer-events-none', 'bg-red-50');
                 document.getElementById('audio-name').innerText = `Loading....`;
                 const removeClass = document.querySelectorAll(`.single-audio`);
                 removeClass.forEach(clName => {
@@ -131,8 +134,11 @@ const newAudioCategoryFull = (catId) => {
                         playBtn.innerHTML = `<i class="fa fa-solid fa-pause"></i>`;
                     }
                     document.getElementById('audio-name').innerHTML = `${data[audioData].id}.<span class="inline-block md:hidden">${(data[audioData].title).slice(0, 10)}...</span><span class="hidden md:inline-block">${(data[audioData].title).slice(0, 50)}</span>`;
+
                     audioImage.src = data[audioData].imgUrl.length > 0 ? data[audioData].imgUrl : `def.png`;
+
                     document.getElementById('download-link').setAttribute('href', `${data[audioData].url}`);
+                    audioDownloadLink.classList.remove('pointer-events-none', 'bg-red-50');
                 });
 
             }
